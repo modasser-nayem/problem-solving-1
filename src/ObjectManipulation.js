@@ -27,7 +27,7 @@ const books = [
 
 function getBookTitles(books) {
    if (!Array.isArray(books)) {
-      console.log("Error: parameters must be arrays only");
+      console.log("Error: argument must be arrays only");
       return;
    } else {
       const bookTitles = books.map((book) => book.title);
