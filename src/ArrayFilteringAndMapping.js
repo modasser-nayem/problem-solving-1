@@ -35,12 +35,9 @@ function remainingPeopleNames(persons) {
       console.error("Only array accepted");
       return;
    } else {
-      const remainPeople = persons.filter(
-         (person) => person.gender.toLowerCase() !== "female"
-      );
-
-      const peopleNames = remainPeople.map((people) => people.name);
-
+      const peopleNames = persons
+         .filter((person) => person.gender.toLowerCase() !== "female")
+         .map((people) => people.name);
       return peopleNames;
    }
 }
